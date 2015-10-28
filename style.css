@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+/*float styles*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: 1024px;
+}
+html{
+	background-color: red;
+}
+body{
+	background-color: yellow;
+	font-family: 'Open Sans', sans-serif;
+}
+hr{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	height: 100%;
+}
+/*--- Navigation style--*/
+.left{
+	position: relative;
+	top:0;
+	left: 0;
+	background-color: #282828;
+	height: 1067px; 
+	display: inline-block;
+}
+
+#set-1 img{
+	padding: 10% 10%;
+}
+#set-1 img:focus,#set-1 img:hover{
+	border-left: 6px solid #16aa4a;
+	background: #fff;
+}
+.nav hr{border: 1px solid #484747;}
+/*--- Navigation ends--*/
+/*--- Search Result style --*/
+.right{
+	display: inline-block;
+	position: relative;
+	top:0;
+	right: 0;
+	background-color: #f2f2f2;
+	height: 1067px;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+html,.left,.right{height: 1200px;}
+header{
+	background-color: #d8d8d8;
+	font-size: 20px;
+	padding: 1% 2%;
+	margin-bottom: 5px;
+}
+.filter{
+	margin: 0;
+	padding: 0;
+}
+.filter ul{
+	padding-left: 2%;
+	font-size: 14px;
+	font-weight: 400;
+	
+}
+.filter ul>li{
+	display: inline-block;
+	padding-right: 2%;
+}
+#searchbox{
+	background-image: url(images/magnify_gray.png);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+	padding: 12px;
+	margin: 0 2% 1% ;
+  	width: 95%;
+  	font-weight: 400;
+  	font-size: 20px;
+}
+/*content details*/
+.content{
+	position: relative;
+	margin: 0 3% 0 2%;
+	padding-left: 3%;
+	background-color: #fff;
+}
+.vertical-line{
+	border-left: 4px solid #e5e5e5;
+}
+.date{
+	position: absolute;
+	left: 20px;
+	font-size: 14px;
+	display: inline-block;
+}
+.result{
+	padding-left: 2%;
+	font-size: 14px;
+	display: inline-block;
+}
+.right hr{
+	border: 1px solid #e8e8e8;
+}
+.file_content,.discussion_content,.todo_content{
+	padding: 30px 0px 30px 30px;
+}
+.author {color: #d8d8d8}
+.author-line{text-decoration: underline;}
+
+.date h3{ 
+	font-weight:600; 
+	background-color:#e5e5e5; 
+	padding: 6px 5px;}
+.preview{background-color: #ebf7fc; padding: 2px 0}
+.result h3{ font-weight: 600; font-size:18px; position: relative; display: inline-block; padding-right: 4px; }
+.result h2{ font-weight: 600;}
+.result h5{ padding-bottom: 15px;}
+.result i {}
+.result .tag{ border: 1px solid #e5e5e5; display: inline-block; color:#c1c1c1;font-size:12px; padding: 4px 10px; margin-bottom: 2px}
+.result a{color: #3482a5; text-decoration: underline; font-weight: bold; font-size: 12px; margin: 0; }
+.result .tag_name{background-color: #666666; padding: 6px;padding: 1%;width: 79px;color: #fff;}
+.comment {font-weight: 300; font-size:14px;color:#000;padding-top: 5px;padding-bottom: 20px}
+.result p{ font-weight: 300; font-size:16px; }
+.show-more{background-color: #ebebea; color: #000; text-align:center;font-weight:600; font-size:14px;text-decoration: none; padding: 10px}
+.in-line{
+	width: 40%;
+	display: inline-block;
+}
+.in-lineA{
+	display: inline-block;
+}
+.comments{
+	font-size: 16px;
+	font-weight: 300px;
+}
+
+
